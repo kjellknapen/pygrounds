@@ -3,4 +3,5 @@ from django.urls import include, path
 
 urlpatterns = [
     path('', include('sitegrounds.urls')),
+    path('admin/', admin.site.urls),
 ]
