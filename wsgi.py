@@ -1,7 +1,7 @@
 import os
 import sys
 
-path='/home/deploybot/pygrounds.knapenkjell.com/'
+path = '/home/deploybot/pygrounds.knapenkjell.com/'
 
 if path not in sys.path:
   sys.path.append(path)
