@@ -23,10 +23,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'b$#p7q_fhwx1h35^5c#jcew#in(k#mc*&x@*ccw6t=t$35@)$='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'pygrounds.knapenkjell.com',
+    '127.0.0.1',
 ]
 
 
@@ -53,10 +54,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'pygrounds.urls'
 
+SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(SETTINGS_PATH, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
