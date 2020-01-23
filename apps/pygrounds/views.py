@@ -3,4 +3,5 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return render(request, 'sitegrounds/index.html')
+    context = {'name': 'Kjell'}
+    return render(request, 'pygrounds/index.html', context)

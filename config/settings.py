@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'pygrounds.urls'
+ROOT_URLCONF = 'config.urls'
 
 SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 
@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'pygrounds.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database
